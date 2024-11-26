@@ -1,8 +1,67 @@
-.main{
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar works started from here */
+nav{
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    padding: 15px;
 }
-.btn{
+#logo{
     display: flex;
+    justify-content: left;
+    width: 70%;
+    align-items: center;
+    margin-left: 50px;
+}
+#sideBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    gap: 20px;
     
 }
+#btn{
+    display: flex;
+    gap: 10px;
+}
+#login{
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    height: 2.5rem ;
+
+}
+#signup{
+    width: 5rem;
+    padding: 10px;
+    background-color: #e21b70;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    height: 2.5rem ;
+
+}
+#lang{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 2.5rem;
+    width: 6rem;
+    padding: 5px;
+}
+#language{
+    border: none;
+}
+#cart{
+    margin-right: 30px;
+}
+
+/* now the banner works started */
