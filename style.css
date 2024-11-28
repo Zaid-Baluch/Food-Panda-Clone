@@ -275,29 +275,72 @@ main {
   display: flex;
   height: 50vh;
   width: 80vw;
-  margin: 10px auto;
+  margin: 100px auto;
   border-radius: 15px;
   padding: 20px 10px;
 }
 #download {
   display: flex;
+  position: relative;
 }
 #downloadInfo {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-#downloadInfo h3,
-p {
+#downloadInfo p {
+  color: #ffffff;
+}
+#downloadInfo h3 {
   color: #ffffff;
 }
 #buttons {
   display: flex;
   gap: 20px;
 }
-#img {
-  width: 50%;
+#img img {
+  width: 60%;
   position: absolute;
-  right: 0px;
-  top: -20;
+  right: -100px;
+  top: -100px;
+}
+/* benner 5 started */
+#banner5 h1 {
+  margin: 3rem 4rem;
+  font-size: 32px;
+}
+#banner5 img {
+  height: 70vh;
+  object-fit: cover;
+  width: 100%;
+}
+/* section FAQS started */
+#FAQS {
+  margin: 3rem;
+  padding: 3rem;
+}
+#FAQS h2 {
+  font-size: 18px;
+}
+#FAQS h1 {
+  font-size: 32px;
+}
+
+/* footer started */
+#footer {
+  margin: 10px;
+  padding: 10px 50px;
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+#contries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+#contries a {
+  color: black;
+  border-right: 1px solid black;
+  padding-right: 20px;
 }
