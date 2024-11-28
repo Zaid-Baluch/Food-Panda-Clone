@@ -1,67 +1,303 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
 }
 /* navbar works started from here */
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    padding: 15px;
+nav {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  padding: 15px;
+  box-shadow: 5px 0px 10px black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-#logo{
-    display: flex;
-    justify-content: left;
-    width: 70%;
-    align-items: center;
-    margin-left: 50px;
+#logo {
+  display: flex;
+  justify-content: left;
+  width: 70%;
+  align-items: center;
+  margin-left: 50px;
 }
-#sideBar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
-    gap: 20px;
-    
+#sideBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
 }
-#btn{
-    display: flex;
-    gap: 10px;
+#btn {
+  display: flex;
+  gap: 10px;
 }
-#login{
-    width: 70px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    height: 2.5rem ;
+#login {
+  width: 70px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  height: 2.5rem;
+}
+#signup {
+  width: 5rem;
+  padding: 10px;
+  background-color: #e21b70;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 2.5rem;
+}
+#lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 2.5rem;
+  width: 6rem;
+  padding: 5px;
+}
+#language {
+  border: none;
+}
+#cart {
+  margin-right: 30px;
+}
 
+/* now the main  started */
+main {
+  background-color: rgb(255, 255, 255);
 }
-#signup{
-    width: 5rem;
-    padding: 10px;
-    background-color: #e21b70;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    height: 2.5rem ;
+#banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  height: 70vh;
+  /* width: 100vw; */
+  padding: 50px;
+  overflow: hidden;
+}
+#bannerInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  width: 50%;
+  margin-left: 200px 50px;
+  padding: 10px;
+}
+#bannerSearch {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 25px;
+}
+#bannerSearch button {
+  padding: 10px;
+  background-color: #e21b70;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 2.5rem;
+}
+#bannerSearch input {
+  border-radius: 10px;
+  border: 1px solid #dfddde;
+  height: 1.5rem;
+  width: 400px;
+  padding: 10px;
+}
+#bannerImg {
+  position: absolute;
+  width: 100%;
+  right: -20vw;
+}
+#banner Img {
+  width: 60%;
+}
 
+/* banner 2 started */
+#banner2 h1 {
+  margin: 3rem 4rem;
+  font-size: 32px;
 }
-#lang{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    height: 2.5rem;
-    width: 6rem;
-    padding: 5px;
+#banner2 img {
+  height: 70vh;
+  object-fit: cover;
+  width: 100%;
 }
-#language{
-    border: none;
+/* section cities card */
+#citiesCards {
+  margin: 50px;
 }
-#cart{
-    margin-right: 30px;
+#citiesCards h1 {
+  font-size: 32px;
 }
-
-/* now the banner works started */
+#cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+#Islamabad {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://wallpaperaccess.com/full/1968783.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#Islamabad h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+#karachi {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://wallpapers.com/images/hd/karachi-quaid-s-mausoleum-05x5929jya0yamcv.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#karachi h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+#lahore {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://w0.peakpx.com/wallpaper/181/242/HD-wallpaper-minar-e-pakistan-garden-lahore-landscape-nature-pak-pakistani-park-punjab-thumbnail.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#lahore h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+#peshawar {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://www.shutterstock.com/image-photo/peshawar-landmark-khyber-pakhtunkhwa-pakistan-260nw-1459768916.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#peshawar h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+#multan {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://t4.ftcdn.net/jpg/02/81/96/27/360_F_281962774_t826nvzMa7FBmhkJuwAMKnvOMPUt4Oin.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#multan h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+#gawadar {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  background-image: url(https://img.etimg.com/thumb/width-1600,height-900,imgsize-69804,resizemode-75,msid-112174369/news/international/world-news/massive-protests-rock-balochistan-over-alleged-attempts-to-turn-china-backed-gwadar-port-into-military-zone.jpg);
+  /* object-fit: co; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#gawadar h3 {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+/* benner 4 started */
+#banner4 {
+  background-color: #e21b70;
+  display: flex;
+  height: 50vh;
+  width: 80vw;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 20px 10px;
+}
+#download {
+  display: flex;
+}
+#downloadInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#downloadInfo h3,
+p {
+  color: #ffffff;
+}
+#buttons {
+  display: flex;
+  gap: 20px;
+}
+#img {
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  top: -20;
+}
