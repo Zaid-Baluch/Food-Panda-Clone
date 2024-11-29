@@ -337,10 +337,38 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 0 40px;
 }
 #contries a {
   color: black;
   border-right: 1px solid black;
   padding-right: 20px;
+}
+
+/* UsefullLinks started */
+#UsefullLinks {
+  display: flex;
+  gap: 5rem;
+  height: 70vh;
+}
+#ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  columns: auto;
+  gap: 1rem 2rem;
+  text-align: left;
+}
+.links {
+  list-style: none;
+}
+.links a {
+  color: black;
+}
+
+/* last footer */
+#lastfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
