@@ -136,11 +136,43 @@ main {
   object-fit: cover;
   width: 100%;
 }
+#banner2 {
+  position: relative;
+}
+#popup {
+  height: 350px;
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  bottom: -70px;
+  left: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px black;
+  text-align: center;
+}
+#popup h3 {
+  font-size: 20px;
+}
+#popup p {
+  text-align: start;
+  margin: 30px;
+}
+#popup button {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  padding: 10px;
+  background-color: #e21b70;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
 /* section cities card */
 #citiesCards {
   margin: 50px;
 }
 #citiesCards h1 {
+  margin-top: 125px;
   font-size: 32px;
 }
 #cities {
@@ -300,11 +332,13 @@ main {
 }
 #img img {
   width: 60%;
-  position: absolute;
   right: -100px;
   top: -100px;
 }
 /* benner 5 started */
+#banner5 {
+  position: relative;
+}
 #banner5 h1 {
   margin: 3rem 4rem;
   font-size: 32px;
@@ -313,6 +347,35 @@ main {
   height: 70vh;
   object-fit: cover;
   width: 100%;
+}
+#popup2 {
+  height: 200px;
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  bottom: -70px;
+  left: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px black;
+}
+#popup2 h3 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+#popup2 p {
+  text-align: start;
+  margin: 30px;
+  margin-left: 10px;
+}
+#popup2 button {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  padding: 10px;
+  background-color: #e21b70;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 /* section FAQS started */
 #FAQS {
